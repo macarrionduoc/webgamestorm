@@ -34,3 +34,17 @@ def categorias_shooters(request):
 def categorias_terror(request):
     return render(request, 'categorias/terror.html')
 
+
+def juegos_apex(request):
+    contexto = {
+        'nombre' : 'APEX'
+    }
+    return render(request, 'juegos/apex.html', contexto)
+
+def juegos_show(request, id):
+    juegos = []
+
+    contexto = {
+        'nombre' : 'APEX'
+    }
+    return render(request, 'juegos/apex.html', contexto)

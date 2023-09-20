@@ -1,0 +1,31 @@
+    {% extends "base.html" %}
+    {% load static %}
+    {% block contenido %}
+
+    <!-- INICIO  TITULO PAGINA - GRUPO CENTRAL -->
+    <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-md-4">
+            <h4 class="text-center mb-3">{{nombre}}</h4>
+          </div>
+      </div>
+    </div>
+    <!-- TERMINO  TITULO PAGINA - GRUPO CENTRAL -->
+
+    <Br></Br>
+
+    <!-- INICIO CAJA DE TARJETAS -->
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="card" style="width: 18rem;">
+          <img src="{% static 'img/accion_apex.jpg' %}" class="card-img-top" alt="Apex">
+          <div class="card-body">
+            <h5 class="card-title">{{nombre}}</h5>
+            <p class="card-text">PS4, PC.</p>
+            <a href="#" class="btn btn-primary">Agregar al carro</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TERMINO CAJA DE TARJETAS -->
+    {% endblock %}

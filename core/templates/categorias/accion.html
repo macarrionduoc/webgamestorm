@@ -18,11 +18,11 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="card" style="width: 18rem;">
-          <img src="{% static 'img/accion_apex.jpg' %}" class="card-img-top" alt="Apex">
+          <img class="card-img-top" alt="Apex">
           <div class="card-body">
-            <h5 class="card-title">Apex</h5>
+            <h5 href="{% url 'juegos_apex' %}" class="card-title">Apex</h5>
             <p class="card-text">Apex - Legend, PC.</p>
-            <a href="#" class="btn btn-primary">Agregar al carro</a>
+            <a href="{% url 'juegos_apex' %}" class="btn btn-primary">Ver</a>
           </div>
         </div>
         <div class="card" style="width: 18rem;">
@@ -30,7 +30,7 @@
           <div class="card-body">
             <h5 class="card-title">Battlegrounds</h5>
             <p class="card-text">Battlegrounds, PC.</p>
-            <a href="#" class="btn btn-primary">Agregar al carro</a>
+            <a href="{% url 'juegos_battlegrounds' %}" class="btn btn-primary">Ver</a>
           </div>
         </div>
         <div class="card" style="width: 18rem;">
@@ -38,7 +38,7 @@
           <div class="card-body">
             <h5 class="card-title">Destiny 2</h5>
             <p class="card-text">Destiny 2, PS4.</p>
-            <a href="#" class="btn btn-primary">Agregar al carro</a>
+            <a href="{% url 'juegos_destiny2' %}" class="btn btn-primary">Ver</a>
           </div>
         </div>
         <div class="card" style="width: 18rem;">
@@ -46,7 +46,7 @@
           <div class="card-body">
             <h5 class="card-title">Warframe</h5>
             <p class="card-text">Warframe, PC.</p>
-            <a href="#" class="btn btn-primary">Agregar al carro</a>
+            <a href="{% url 'juegos_warframe' %}" class="btn btn-primary">Ver</a>
           </div>
         </div>
       </div>
