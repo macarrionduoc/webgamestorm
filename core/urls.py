@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import index, registro, categoria, carro, categorias_accion, categorias_aventura, categorias_carreras, categorias_deportes, categorias_rol, categorias_shooters, categorias_terror, juegos_apex, juegos_show
+from .views import index, registro, categoria, carro, categorias_accion, categorias_aventura, categorias_carreras, categorias_deportes, categorias_rol, categorias_shooters, categorias_terror, juego_apex, juego_show
 
 urlpatterns = [
     #path('admin/', admin.site.urls),
@@ -15,8 +15,8 @@ urlpatterns = [
     path('categorias/shooters', categorias_shooters, name="categorias_shooters"),
     path('categorias/terror', categorias_terror, name="categorias_terror"),
 
-    #path('juegos/apex', juegos_apex, name="juegos_apex")
+    #path('juego/apex', juego_apex, name="juego_apex"),
 
-    path('juegos/<int:id>', juegos_show, name="juegos_show")
+    path('juego/<int:id>', juego_show, name="juego_show")
 
 ]

@@ -35,16 +35,21 @@ def categorias_terror(request):
     return render(request, 'categorias/terror.html')
 
 
-def juegos_apex(request):
+def juego_apex(request):
     contexto = {
         'nombre' : 'APEX'
     }
-    return render(request, 'juegos/apex.html', contexto)
+    return render(request, 'juego/apex.html', contexto)
 
-def juegos_show(request, id):
-    juegos = []
+def juego_show(request, id):
+    juegos = ['apex', 'battlegrounds', 'destiny2', 'warframe', 'gta5', 'naraka', 'rust', 'wayfinder', 'automobilista2', 'forza', 'need_for_speed', 'need_for_speed_delux', 'thecrew2', 'f1_23', 'fc24', 'fifa_23', 'madden_24', 'nba_24', 'black_desert', 'elden_ring', 'final_fantasy_xiv', 'lostark', 'couter_strike', 'metro', 'rainbowsix', 'team_fortress_2', 'the_texas_chain_saw_massacre', 'dead_daylight', 'dying_light', 'remnant', 'the_outlast_trials']
+    imagenes = ['img/accion_apex.jpg', 'img/accion_battlegrounds.jpg', 'img/accion_destiny_2.jpg', 'img/accion_warframe.jpg', 'img/aventura_gta_5.jpg', 'img/aventura_naraka.jpg', 'img/aventura_rust.jpg', 'img/aventura_wayfinder.jpg', 'img/carreras_automobilista_2.jpg', 'img/carreras_forza.jpg', 'img/carreras_needForSpeed.jpg', 'img/carreras_needForSpeed_Delux.jpg', 'img/carreras_theCrew_2.jpg', 'img/deportes_f1_23.jpg', 'img/deportes_fc24.jpg', 'img/deportes_fifa_23.jpg', 'img/deportes_madden_24.jpg', 'img/deportes_nba_24.jpg', 'img/rol_blackDesert.jpg', 'img/rol_eldenRing.jpg', 'img/rol_finalFantasy_xiv.jpg', 'img/rol_lostark.jpg', 'img/shooter_couterStrike.jpg', 'img/Shooter_metro.jpg', 'img/shooter_rainbowsix.jpg', 'img/shooter_teamFortress_2.jpg', 'img/teeror_theTexasChainSawMassacre.jpg', 'img/terror_deadDaylight.jpg', 'img/terror_dyingLight.jpg', 'img/terror_remnant.jpg', 'img/terror_theOutlastTrials.jpg']
+    
+    juego = juegos[id-1]
+    img = imagenes[id-1]
 
     contexto = {
-        'nombre' : 'APEX'
+        'nombre' : juego,
+        'img'   : img
     }
-    return render(request, 'juegos/apex.html', contexto)
+    return render(request, 'juego/show.html', contexto)
