@@ -3,7 +3,7 @@ from .views import index, registro, categoria, carro, categorias_accion, categor
 
 urlpatterns = [
     #path('admin/', admin.site.urls),
-    path('index', index, name="index"),
+    path('', index, name="index"),
     path('registro', registro, name="registro"),
     path('categoria', categoria, name="categoria"),
     path('carro', carro, name="carro"),
