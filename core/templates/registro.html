@@ -1,0 +1,131 @@
+    {% extends "base.html" %}
+    {% load static %}
+    {% block contenido %}
+    
+    
+
+
+    <!--INICIO ENCABEZADO-->
+    <!--TERMINO ENCABEZADO-->
+
+    <!--INICIO BARRA DE VAVEGACION-->
+    <!--TERMINO BARRA DE VAVEGACION-->
+
+    <!-- INICIO CAJA INICIO DE SESION -->
+    <!-- TERMINO CAJA INICIO DE SESION -->
+
+    <!-- INICIO GRUPO DE BOTONES INICIO DE SESION -->
+    <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-md-4">
+            <h4 class="text-center mb-3">FORMULARIO DE REGISTRO</h4>
+          </div>
+      </div>
+    </div>
+    <!-- TERMINO GRUPO DE BOTONES INICIO DE SESION -->
+
+    <Br></Br>
+
+    <!-- INICIO FORMULARIO DE REGISTRO -->
+    <div class="container mb-3">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <form class="row g-3" id="formulario">
+                <div class="col-md-6">
+                  <label for="inputNombre" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputApellido" class="form-label">Apellido</label>
+                  <input type="text" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-md-12">
+                  <label for="inputEmail" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail" placeholder="ejemplo@correo.com">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword" class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" id="inputPassword">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword2" class="form-label">Confirma Contraseña</label>
+                  <input type="password" class="form-control" id="inputPassword2">
+                </div>
+                <div class="col-12">
+                  <label for="inputPhone" class="form-label">Teléfono</label>
+                  <input type="text" class="form-control" id="inputPhone" placeholder="+569 999 9999">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Dirección 2</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="Avenida/Pasaje #numero">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">Región</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Elige...</option>
+                    <option>Region Metropolitana</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">Comuna</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Elige...</option>
+                    <option>Santiago</option>
+                    <option>Cerrillos</option>
+                    <option>Cerro Navia</option>
+                    <option>Conchalí</option>
+                    <option>El Bosque</option>
+                    <option>Estación Central</option>
+                    <option>Huechuraba</option>
+                    <option>Independencia</option>
+                    <option>La Cisterna</option>
+                    <option>La Florida</option>
+                    <option>La Granja</option>
+                    <option>La Pintana</option>
+                    <option>La Reina</option>
+                    <option>Las Condes</option>
+                    <option>Lo Barnechea</option>
+                    <option>Lo Espejo</option>
+                    <option>Lo Prado</option>
+                    <option>Macul</option>
+                    <option>Maipú</option>
+                    <option>Ñuñoa</option>
+                    <option>Pedro Aguirre Cerda</option>
+                    <option>Peñalolén</option>
+                    <option>Providencia</option>
+                    <option>Pudahuel</option>
+                    <option>Quilicura</option>
+                    <option>Quinta Normal</option>
+                    <option>Recoleta</option>
+                    <option>Renca</option>
+                    <option>San joaquín</option>
+                    <option>Vitacura</option>
+                    <option>Puente Alto</option>
+                    <option>Pirque</option>
+                  </select>
+                </div>
+                <div class="col-md-3">
+                  <label for="inputZip" class="form-label">Código postal</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Verifícame
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-success">Ingresar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TERMINO FORMULARIO DE REGISTRO -->
+    {% endblock %} 

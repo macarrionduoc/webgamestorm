@@ -1,0 +1,32 @@
+    {% extends "base.html" %}
+    {% load static %}
+    {% block contenido %}
+
+    <!--INICIO ENCABEZADO-->
+    <!--TERMINO ENCABEZADO-->
+
+    <!--INICIO BARRA DE VAVEGACION-->
+    <!--TERMINO BARRA DE VAVEGACION-->
+
+    <!-- INICIO CAJA INICIO DE SESION -->
+    <!-- TERMINO CAJA INICIO DE SESION -->
+
+    <!-- INICIO  TITULO PAGINA - GRUPO DE BOTONES CENTRALES -->
+    <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-md-4">
+            <h4 class="text-center mb-3">CATEGORIAS</h4>
+            <div class="d-grid gap-2 mb-3">
+              <a href="{% url 'categorias_accion' %}" class="btn btn-secondary p-2" type="button">ACCION</a>
+              <a href="{% url 'categorias_aventura' %}" class="btn btn-secondary p-2" type="button">AVENTURA</a>
+              <a href="{% url 'categorias_carreras' %}" class="btn btn-secondary p-2" type="button">CARRERAS</a>
+              <a href="{% url 'categorias_deportes' %}" class="btn btn-secondary p-2" type="button">DEPORTES</a>
+              <a href="{% url 'categorias_rol' %}" class="btn btn-secondary p-2" type="button">ROL</a>
+              <a href="{% url 'categorias_shooters' %}" class="btn btn-secondary p-2" type="button">SHOOTERS</a>
+              <a href="{% url 'categorias_terror' %}" class="btn btn-secondary p-2" type="button">TERROR</a>
+            </div>
+          </div>
+      </div>
+    </div>
+    <!-- TERMINO TITULO PAGINA - GRUPO DE BOTONES CENTRALES-->
+    {% endblock %}    

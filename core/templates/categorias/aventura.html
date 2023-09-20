@@ -1,0 +1,55 @@
+    {% extends "base.html" %}
+    {% load static %}
+    {% block contenido %}
+
+    <!-- INICIO  TITULO PAGINA - GRUPO CENTRAL -->
+    <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-md-4">
+            <h4 class="text-center mb-3">AVENTURA</h4>
+          </div>
+      </div>
+    </div>
+    <!-- TERMINO  TITULO PAGINA - GRUPO CENTRAL -->
+
+    <Br></Br>
+
+    <!-- INICIO CAJA DE TARJETAS -->
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="card" style="width: 18rem;">
+          <img src="{% static 'img/aventura_gta_5.jpg' %}" class="card-img-top" alt="Apex">
+          <div class="card-body">
+            <h5 class="card-title">GTA 5</h5>
+            <p class="card-text">GTA 5, PC.</p>
+            <a href="#" class="btn btn-primary">Agregar al carro</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="{% static 'img/aventura_naraka.jpg' %}" class="card-img-top" alt="Battlegrounds">
+          <div class="card-body">
+            <h5 class="card-title">Naraka</h5>
+            <p class="card-text">Naraka, PC.</p>
+            <a href="#" class="btn btn-primary">Agregar al carro</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="{% static 'img/aventura_rust.jpg' %}" class="card-img-top" alt="Spider-man">
+          <div class="card-body">
+            <h5 class="card-title">Rust</h5>
+            <p class="card-text">Rust, PS4.</p>
+            <a href="#" class="btn btn-primary">Agregar al carro</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="{% static 'img/aventura_wayfinder.jpg' %}" class="card-img-top" alt="warframe">
+          <div class="card-body">
+            <h5 class="card-title">Wayfinder</h5>
+            <p class="card-text">Wayfinder, PC.</p>
+            <a href="#" class="btn btn-primary">Agregar al carro</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TERMINO CAJA DE TARJETAS -->
+    {% endblock %}

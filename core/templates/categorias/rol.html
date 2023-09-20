@@ -1,0 +1,55 @@
+    {% extends "base.html" %}
+    {% load static %}
+    {% block contenido %}
+
+    <!-- INICIO  TITULO PAGINA - GRUPO CENTRAL -->
+    <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-md-4">
+            <h4 class="text-center mb-3">ROL</h4>
+          </div>
+      </div>
+    </div>
+    <!-- TERMINO  TITULO PAGINA - GRUPO CENTRAL -->
+
+    <Br></Br>
+
+    <!-- INICIO CAJA DE TARJETAS -->
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="card" style="width: 18rem;">
+          <img src="{% static 'img/rol_blackDesert.jpg' %}" class="card-img-top" alt="Apex">
+          <div class="card-body">
+            <h5 class="card-title">Black Desert</h5>
+            <p class="card-text">Black Desert, PC.</p>
+            <a href="#" class="btn btn-primary">Agregar al carro</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="{% static 'img/rol_eldenRing.jpg' %}" class="card-img-top" alt="Battlegrounds">
+          <div class="card-body">
+            <h5 class="card-title">Elden Ring</h5>
+            <p class="card-text">Elden Ring</p>
+            <a href="#" class="btn btn-primary">Agregar al carro</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="{% static 'img/rol_finalFantasy_xiv.jpg' %}" class="card-img-top" alt="Spider-man">
+          <div class="card-body">
+            <h5 class="card-title">Final Fantasy XIV</h5>
+            <p class="card-text">Final Fantasy XIV, PS4.</p>
+            <a href="#" class="btn btn-primary">Agregar al carro</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="{% static 'img/rol_lostark.jpg' %}" class="card-img-top" alt="warframe">
+          <div class="card-body">
+            <h5 class="card-title">Lostark</h5>
+            <p class="card-text">Lostark, PC.</p>
+            <a href="#" class="btn btn-primary">Agregar al carro</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TERMINO CAJA DE TARJETAS -->
+    {% endblock %}

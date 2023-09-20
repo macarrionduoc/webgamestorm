@@ -1,0 +1,55 @@
+    {% extends "base.html" %}
+    {% load static %}
+    {% block contenido %}
+
+    <!-- INICIO  TITULO PAGINA - GRUPO CENTRAL -->
+    <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-md-4">
+            <h4 class="text-center mb-3">TERROR</h4>
+          </div>
+      </div>
+    </div>
+    <!-- TERMINO  TITULO PAGINA - GRUPO CENTRAL -->
+
+    <Br></Br>
+
+    <!-- INICIO CAJA DE TARJETAS -->
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="card" style="width: 18rem;">
+          <img src="{% static 'img/teeror_theTexasChainSawMassacre.jpg' %}" class="card-img-top" alt="Apex">
+          <div class="card-body">
+            <h5 class="card-title">The Texas Chain Saw Massacre</h5>
+            <p class="card-text">The Texas Chain Saw Massacre, PC.</p>
+            <a href="#" class="btn btn-primary">Agregar al carro</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="{% static 'img/terror_deadDaylight.jpg' %}" class="card-img-top" alt="Battlegrounds">
+          <div class="card-body">
+            <h5 class="card-title">Dead Daylight</h5>
+            <p class="card-text">Dead Daylight, Pc, PS4</p>
+            <a href="#" class="btn btn-primary">Agregar al carro</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="{% static 'img/terror_remnant.jpg' %}" class="card-img-top" alt="Spider-man">
+          <div class="card-body">
+            <h5 class="card-title">Remnant</h5>
+            <p class="card-text">Remnant, PS4.</p>
+            <a href="#" class="btn btn-primary">Agregar al carro</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="{% static 'img/terror_theOutlastTrials.jpg' %}" class="card-img-top" alt="warframe">
+          <div class="card-body">
+            <h5 class="card-title">The Outlast Trials</h5>
+            <p class="card-text">The Outlast Trials, PC.</p>
+            <a href="#" class="btn btn-primary">Agregar al carro</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TERMINO CAJA DE TARJETAS -->
+    {% endblock %}
